@@ -1,11 +1,11 @@
 @font-face {
-	font-family: gilroy-bolditalic;
+	font-family: "gilroy-bolditalic";
 	src: url('/fonts/gilroy-bolditalic.ttf');
 }
 @font-face {
-	font-family: gilroy-regular;
+	font-family: "gilroy-regular";
 	src: url('/fonts/gilroy-regular.ttf');
 }
 body {
-  font-size: gilroy-regular;
+  font-size: "gilroy-regular";
 } 
