@@ -1,13 +1,26 @@
 @font-face {
-  font-family: 'gilroy';
-  src: url('/fonts/Gilroy/Gilroy-Medium.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+  font-family:"Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Regular.woff2") format('woff2');
+	
+	font-style: normal;
+}
+@font-face {
+  font-family:"Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Light.woff2") format('woff2');
+	font-weight: 300;
+	font-style:lighter;
+}
+@font-face {
+  font-family:"Gilroy";
+  src: url("/fonts/Gilroy/Gilroy-Bold.woff2") format('woff2');
+	font-weight: 700;
+	font-style: bold;
 }
 
 body {
-  font-family: "gilroy";
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
 }
  *,
  *:after {
@@ -27,35 +40,209 @@ link {
   border: none;
 }
 .container {
-	width: 1170px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
 @media (min-width: 576px) {
 	content: {
 		max-width: 540px;
-		margin-right: auto;
-		margin-left: auto;
-	};
+	}
 }
 @media (min-width: 768px) {
 	content: {
 		max-width: 720px;
-		margin-right: auto;
-		margin-left: auto;
 	};
 }
 @media (min-width: 960px) {
 	content: {
 		max-width: 992px;
-		margin-right: auto;
-		margin-left: auto;
 	};
 }
 @media (min-width: 1200px) {
 	content: {
 		max-width: 1140px;
-		margin-right: auto;
-		margin-left: auto;
 	};
 }
+
+.nav-logo__img {
+	margin-top: 39px;
+	width: 41;
+	height: 39px;
+}
+.nav__link {
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+}
+.nav__item{
+	margin-top: 15px;
+
+}
+.nav__btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 150px;
+	height: 43px;
+	border: 1px solid #F7941E;
+	border-radius: 5px;
+	background: #FAFAFA;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #F7941E;
+}
+.nav__btn:hover{
+	background:#F7941E;
+	color:#FAFAFA;
+}
+.nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.gift{
+	padding-top: 20px;
+	background-color: #F1F1F2;
+}
+.gift-col__title {
+	margin-top: 15px;
+	font-size: 30px;
+	line-height: 35px;
+	color: #000000;
+	text-align: center;
+}
+.gift-col__text {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 20px;
+	line-height: 140.62%;
+	color: #000000;
+}
+.gift-col__btn{
+	margin-top: 15px;
+	margin-bottom: 25px;
+	width: 200px;
+	height: 60px;
+	background: #F7941E;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 22px;
+	align-items: center;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.gift__img {
+	max-width: 100%;
+}
+.gift__title {
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-size: 32px;
+	color: #000000;
+}
+.gift__text {
+	font-size: 20px;
+	line-height: 28px;
+	color: #000000;
+}
+.gift__btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 150px;
+	height: 50px;
+	border: 1px solid #F7941E;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-family: Gilroy;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #f7941e;
+}
+.gift__btn:hover {
+background-color: #ffffff;
+text-shadow: burlywood;
+}
+.occas-block{ 
+	background-color: #FAFAFA;
+}
+.occas__title {
+	margin-top: 25px;
+	font-size: 26px;
+	line-height: 38px;
+	text-align: center;
+	color: #000000;
+}
+.occas__text {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-size: 18px;
+		line-height: 24px;
+		text-align: center;
+		color: #000000;
+}
+.occas__img {
+	
+	display: block;
+	width: 270px;
+	height: 270px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.occas-block__item {
+	margin-top: 20px;
+	margin-bottom: 27px;
+	font-size: 20px;
+	line-height: 24px;
+	color: #000000;
+	text-align: center ;
+}
+.occas__link{
+	display: block;
+	margin-bottom: 20px;
+	padding-left: 45px;
+	font-size: 13px;
+	line-height: 19px;
+	color: #000000;
+}
+.occas__link:hover{
+	color:rgb(56, 98, 189) ;
+	text-shadow: wheat;
+}
+.start {
+	background: #F7941E;	
+}
+.start-col__title {
+	margin-top: 35px;
+	font-size: 25px;
+	line-height: 45px;
+	text-align: center;
+	color: #000000;
+}
+.start-col__text {
+	margin-top: 30px;
+	font-size: 18px;
+	line-height: 140.62%;
+	color: #000000;
+}
+.start-col__btn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 180px;
+	height: 45px;
+	background: #231F20;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 22px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+
+
+
